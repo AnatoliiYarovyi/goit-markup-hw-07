@@ -3,9 +3,9 @@
 }
 .footer .conteiner {
   display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
-  align-items: baseline;
 }
 .footer .contacts {
   margin-right: 70px;
@@ -31,13 +31,14 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .address .item:not(:last-child) {
   margin-bottom: 9px;
-}
-.address .link:hover,
-.address .link:focus {
-  color: $accent-color;
 }
 .footer .contacts-2 {
   margin-right: 93px;
@@ -59,12 +60,9 @@
   fill: $white-color;
 }
 .contacts-3 .form {
-  display: flex;
-  align-items: center;
+  @include centered-flex(flex, center, flex-start);
 }
 .contacts-3 input {
-  display: flex;
-  align-items: center;
   width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -100,8 +98,7 @@
   cursor: pointer;
 }
 .btn span {
-  display: flex;
-  align-items: center;
+  @include centered-flex(flex, center, flex-start);
 }
 .btn span::after {
   content: '';

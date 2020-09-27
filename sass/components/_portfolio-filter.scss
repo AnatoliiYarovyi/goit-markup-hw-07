@@ -2,8 +2,7 @@ button {
   font-family: inherit;
 }
 .filter {
-  display: flex;
-  justify-content: center;
+  @include centered-flex();
   margin-bottom: 50px;
 }
 .filter .item:not(:last-child) {
@@ -21,14 +20,14 @@ button {
   border-radius: 4px;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
   transition: color 250ms $timing-function,
-    background-color 250ms $timing-function,
-    box-shadow 250ms $timing-function;
-}
-.filter button:hover,
-.filter button:focus {
-  color: $white-color;
-  background-color: $accent-color;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+    background-color 250ms $timing-function, box-shadow 250ms $timing-function;
 }

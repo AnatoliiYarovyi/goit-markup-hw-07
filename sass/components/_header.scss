@@ -1,7 +1,9 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
 .conteiner.main-nav,
 .main-nav {
-  display: flex;
-  align-items: center;
+  @include centered-flex(flex, center, flex-start);
 }
 .logo {
   margin-right: 93px;
@@ -43,10 +45,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
-}
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 .site-nav .link {
   position: relative;
@@ -64,14 +67,9 @@
   border-radius: 2px;
 }
 .site-address .link {
-  display: inline-flex;
-  align-items: center;
+  @include centered-flex(inline-flex, center, flex-start);
 
   color: $text-color;
-}
-.site-address .link:hover,
-.site-address .link:focus {
-  color: $accent-color;
 }
 .site-address .icon {
   margin-right: 10px;
@@ -84,7 +82,4 @@
 .site-address .icon.phone {
   height: 16px;
   width: 10px;
-}
-header {
-  border-bottom: 1px solid #ececec;
 }

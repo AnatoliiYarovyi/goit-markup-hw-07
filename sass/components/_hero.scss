@@ -1,8 +1,6 @@
 .hero {
-  display: flex;
+  @include centered-flex();
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   max-width: 1600px;
   height: 600px;
   margin-left: auto;

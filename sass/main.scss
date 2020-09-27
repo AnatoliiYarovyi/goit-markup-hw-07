@@ -1,5 +1,6 @@
 @import './utils/variables';
 @import './base/common';
+@import './utils/mixins';
 @import './components/header';
 @import './components/hero';
 @import './components/benefits';
@@ -13,24 +14,12 @@
 @import './components/backdrop';
 @import './components/modal';
 
-
-/* --------------- header ------------------ */
-
-/* ---------------- Герой ------------- */
-
-/* ---------- Преимущества ------------ */
-
-/* -------------- (Чем занимаемся) image-list -------------- */
-
-/* -----------  staff-list + social-network ------------------ */
-
-/* ------------------- clients --------------------- */
-
-/* ------- footer ----------- */
-
-/* ------------ PORTFOLIO [filter + cards] ------------------ */
-
-/* ---------- Модальное окно [backdrop + modal]-------------- */
-
-
-
+/* --- header --- */
+/* --- Герой --- */
+/* --- Преимущества  --- */
+/* --- (Чем занимаемся) image-list --- */
+/* ---  staff-list + social-network --- */
+/* --- clients --- */
+/* --- footer --- */
+/* --- PORTFOLIO [filter + cards] --- */
+/* --- Модальное окно [backdrop + modal]--- */
