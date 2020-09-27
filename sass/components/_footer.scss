@@ -1,0 +1,115 @@
+.footer {
+  background-color: $ftr-bgcolor;
+}
+.footer .conteiner {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  align-items: baseline;
+}
+.footer .contacts {
+  margin-right: 70px;
+}
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+
+  color: $white-color;
+}
+.address .text {
+  margin-bottom: 9px;
+
+  color: $white-color;
+  font-style: normal;
+}
+.address .link {
+  display: block;
+
+  color: $ftr-link-color;
+  font-style: normal;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.address .link:hover,
+.address .link:focus {
+  color: $accent-color;
+}
+.footer .contacts-2 {
+  margin-right: 93px;
+}
+.contacts-2 .title,
+.contacts-3 .title {
+  margin-bottom: 20px;
+
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
+  color: $white-color;
+}
+.contacts-2 .item,
+.contacts-2 .link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.contacts-2 .link {
+  fill: $white-color;
+}
+.contacts-3 .form {
+  display: flex;
+  align-items: center;
+}
+.contacts-3 input {
+  display: flex;
+  align-items: center;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  margin-right: 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: $ftr-bgcolor;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+.contacts-3 .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+
+  border-color: transparent;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+.btn span {
+  display: flex;
+  align-items: center;
+}
+.btn span::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url('../images/telegram.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}

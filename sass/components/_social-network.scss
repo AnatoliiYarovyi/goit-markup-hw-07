@@ -1,0 +1,35 @@
+.social-network {
+  display: flex;
+  justify-content: center;
+}
+.social-network .item,
+.social-network .link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+.social-network .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-network .link {
+  align-items: center;
+  justify-content: center;
+  fill: $icon-color;
+}
+.social-network .item:hover,
+.social-network .item:focus {
+  background-color: $accent-color;
+}
+.social-network .item:hover .link,
+.social-network .item:focus .link {
+  fill: $white-color;
+}
+.social-network .icon {
+  height: 20px;
+  width: 20px;
+}
