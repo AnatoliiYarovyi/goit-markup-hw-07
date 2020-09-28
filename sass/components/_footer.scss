@@ -1,26 +1,32 @@
 .footer {
   background-color: $ftr-bgcolor;
-}
-.footer .conteiner {
-  display: flex;
-  align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-.footer .contacts {
-  margin-right: 70px;
-}
-.footer .logo {
-  display: block;
-  margin-bottom: 20px;
 
-  color: $white-color;
-}
-.address .text {
-  margin-bottom: 9px;
+  &__contacts {
+    margin-right: 70px;
+  }
+  &__social-network {
+    margin-right: 93px;
+  }
+  & .title {
+    margin-bottom: 20px;
 
-  color: $white-color;
-  font-style: normal;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.14;
+    color: $white-color;
+  }
+}
+.footer__contacts .address {
+  & .text {
+    margin-bottom: 9px;
+
+    color: $white-color;
+    font-style: normal;
+  }
+
+  & .item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .address .link {
   display: block;
@@ -37,76 +43,26 @@
     color: $accent-color;
   }
 }
-.address .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-.footer .contacts-2 {
-  margin-right: 93px;
-}
-.contacts-2 .title,
-.contacts-3 .title {
-  margin-bottom: 20px;
 
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.14;
-  color: $white-color;
-}
-.contacts-2 .item,
-.contacts-2 .link {
-  background: rgba(255, 255, 255, 0.1);
-}
-.contacts-2 .link {
-  fill: $white-color;
-}
-.contacts-3 .form {
-  @include centered-flex(flex, center, flex-start);
-}
-.contacts-3 input {
-  width: 358px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 16px;
-  margin-right: 12px;
+.footer__mailing {
+  & .form {
+    @include centered-flex(flex, center, flex-start);
+  }
+  & .input-mail {
+    width: 358px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    margin-right: 12px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  background-color: $ftr-bgcolor;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $ftr-bgcolor;
 
-  font-size: 16px;
-  line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
-}
-.contacts-3 .btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 29px;
-
-  border-color: transparent;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  cursor: pointer;
-}
-.btn span {
-  @include centered-flex(flex, center, flex-start);
-}
-.btn span::after {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url('../images/telegram.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 10px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }

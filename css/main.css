@@ -27,14 +27,6 @@ img {
   height: auto;
 }
 
-.conteiner {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 1230px;
-}
-
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,16 +43,6 @@ img {
   text-decoration: none;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section.no-padding {
-  padding-top: 0px;
-  padding-bottom: 94px;
-}
-
 .title {
   margin-top: 0;
   margin-bottom: 50;
@@ -74,6 +56,175 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   color: #757575;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section.no-padding {
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
+.conteiner {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1230px;
+}
+
+.footer .conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo {
+  margin-right: 93px;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.logo .current {
+  color: #2196f3;
+}
+
+.footer .logo {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.hero .button {
+  display: inline-block;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+  min-width: 200px;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #2196f3;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.modal .btn-close__icon {
+  width: 18px;
+  height: 18px;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.modal .btn-close:hover .btn-close__icon,
+.modal .btn-close:focus .btn-close__icon {
+  fill: #2196f3;
+}
+
+.form .btn-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 55px;
+  border-color: transparent;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  cursor: pointer;
+}
+
+.footer .btn {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  padding-right: 29px;
+  border-color: transparent;
+  background: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.footer .btn__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer .btn__name::after {
+  content: '';
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 10px;
 }
 
 header {
@@ -93,16 +244,6 @@ header {
           justify-content: flex-start;
 }
 
-.logo {
-  margin-right: 93px;
-  color: #000000;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-}
-
-.logo .current,
 .site-nav .link.current {
   color: #2196f3;
 }
@@ -229,27 +370,6 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.hero .button {
-  display: inline-block;
-  border-radius: 4px;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  padding: 10px 32px;
-  min-width: 200px;
-  border-color: transparent;
-  color: #ffffff;
-  background-color: #2196f3;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  cursor: pointer;
 }
 
 .benefits-list {
@@ -440,6 +560,11 @@ header {
   width: 20px;
 }
 
+.footer__social-network .link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: #ffffff;
+}
+
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,31 +617,30 @@ header {
   background-color: #2f303a;
 }
 
-.footer .conteiner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
-.footer .contacts {
+.footer__contacts {
   margin-right: 70px;
 }
 
-.footer .logo {
-  display: block;
+.footer__social-network {
+  margin-right: 93px;
+}
+
+.footer .title {
   margin-bottom: 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.14;
   color: #ffffff;
 }
 
-.address .text {
+.footer__contacts .address .text {
   margin-bottom: 9px;
   color: #ffffff;
   font-style: normal;
+}
+
+.footer__contacts .address .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .address .link {
@@ -535,33 +659,7 @@ header {
   color: #2196f3;
 }
 
-.address .item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer .contacts-2 {
-  margin-right: 93px;
-}
-
-.contacts-2 .title,
-.contacts-3 .title {
-  margin-bottom: 20px;
-  text-align: left;
-  font-size: 14px;
-  line-height: 1.14;
-  color: #ffffff;
-}
-
-.contacts-2 .item,
-.contacts-2 .link {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.contacts-2 .link {
-  fill: #ffffff;
-}
-
-.contacts-3 .form {
+.footer__mailing .form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -573,7 +671,7 @@ header {
           justify-content: flex-start;
 }
 
-.contacts-3 input {
+.footer__mailing .input-mail {
   width: 358px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -589,47 +687,6 @@ header {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.contacts-3 .btn {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 29px;
-  padding-right: 29px;
-  border-color: transparent;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  cursor: pointer;
-}
-
-.btn span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-
-.btn span::after {
-  content: '';
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url("../images/telegram.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  margin-left: 10px;
 }
 
 button {
@@ -801,39 +858,6 @@ button {
   border-radius: 4px;
 }
 
-.btn-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #ffffff;
-  cursor: pointer;
-}
-
-.btn-close .icon {
-  width: 18px;
-  height: 18px;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-close:hover .icon,
-.btn-close:focus .icon {
-  fill: #2196f3;
-}
-
 .modal .form {
   padding: 40px;
 }
@@ -965,39 +989,13 @@ button {
   color: #2196f3;
 }
 
-.btn-submit {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px 55px;
-  border-color: transparent;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
-  cursor: pointer;
-}
-
-/* --------------- header ------------------ */
-/* ---------------- Герой ------------- */
-/* ---------- Преимущества ------------ */
-/* -------------- (Чем занимаемся) image-list -------------- */
-/* -----------  staff-list + social-network ------------------ */
-/* ------------------- clients --------------------- */
-/* ------- footer ----------- */
-/* ------------ PORTFOLIO [filter + cards] ------------------ */
-/* ---------- Модальное окно [backdrop + modal]-------------- */
+/* --- header --- */
+/* --- hero --- */
+/* --- benefits  --- */
+/* --- (Чем занимаемся) image-list --- */
+/* ---  staff-list + social-network --- */
+/* --- clients --- */
+/* --- footer --- */
+/* --- PORTFOLIO [filter + cards] --- */
+/* --- Модальное окно [backdrop + modal+modal-form]--- */
 /*# sourceMappingURL=main.css.map */

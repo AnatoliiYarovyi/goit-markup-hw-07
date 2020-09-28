@@ -5,16 +5,6 @@ header {
 .main-nav {
   @include centered-flex(flex, center, flex-start);
 }
-.logo {
-  margin-right: 93px;
-
-  color: $logo-header-color;
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-}
-.logo .current,
 .site-nav .link.current {
   color: $accent-color;
 }

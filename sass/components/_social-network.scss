@@ -1,3 +1,4 @@
+// ----------- Staff ---------------
 %placeholder-size {
   @include centered-flex();
   width: 44px;
@@ -34,4 +35,10 @@
 .social-network .icon {
   height: 20px;
   width: 20px;
+}
+
+// ----------- Footer ---------------
+.footer__social-network .link {
+  background: rgba(255, 255, 255, 0.1);
+  fill: $white-color;
 }
