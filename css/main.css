@@ -378,17 +378,16 @@ header {
   display: flex;
 }
 
+.benefits-list .item {
+  width: calc((100% - 30px * 3) / 4);
+}
+
 .benefits-list .subtitle {
   margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-}
-
-.benefits-list .item,
-.staff-list .item {
-  width: calc((100% - 30px * 3) / 4);
 }
 
 .benefits-list .item:not(:last-child) {
@@ -464,6 +463,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.staff-list .item {
+  width: calc((100% - 30px * 3) / 4);
 }
 
 .section.staff {
