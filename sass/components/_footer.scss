@@ -34,9 +34,11 @@
   color: $ftr-link-color;
   font-style: normal;
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: $timing-function;
+  transition: {
+    property: color;
+    duration: 250ms;
+    timing-function: $timing-function;
+  }
 
   &:hover,
   &:focus {

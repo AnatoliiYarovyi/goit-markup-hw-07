@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -991,14 +990,4 @@ button {
 .form-checkbox .link-contract {
   color: #2196f3;
 }
-
-/* --- header --- */
-/* --- hero --- */
-/* --- benefits  --- */
-/* --- (Чем занимаемся) image-list --- */
-/* ---  staff-list + social-network --- */
-/* --- clients --- */
-/* --- footer --- */
-/* --- PORTFOLIO [filter + cards] --- */
-/* --- Модальное окно [backdrop + modal+modal-form]--- */
 /*# sourceMappingURL=main.css.map */
