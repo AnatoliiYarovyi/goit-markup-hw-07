@@ -1,9 +1,6 @@
 .benefits-list {
   display: flex;
 
-  & .item {
-    width: calc((100% - 30px * 3) / 4);
-  }
   & .subtitle {
     margin-top: 0;
     margin-bottom: 10px;
@@ -11,6 +8,9 @@
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+  }
+  & .item {
+    width: calc((100% - 30px * 3) / 4);
   }
   & .item:not(:last-child) {
     margin-right: 30px;
